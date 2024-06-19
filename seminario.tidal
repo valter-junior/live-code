@@ -1,0 +1,17 @@
+-- Define a simple folk rhythm pattern
+d1 $ sound "bd sn"
+
+d1 $ sound "bd*5"
+
+-- Add a layer with a snare on the off beats
+d2 $ sound "sn:2*4"
+
+-- Introduce a melodic line using a sampled folk instrument, adjust as per available samples
+d3 $ n "g4 a4 b4 c5" # sound "guitar"
+
+-- Add some variations with folk drum patterns
+d4 $ sound "[~ bd]/2 [sn bd]/3 [~ bd]/2"
+
+-- Control the tempo, which is crucial for folk music feel
+setcps (90/60/4)
+
